@@ -1,0 +1,23 @@
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# 本地缓存与临时文件
+.tmp/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# 真实业务数据绝不入库（脱敏/公开数据另放 data/public/）
+data/*
+!data/README.md
+reports/warning_list.csv
+
+# 本地安装产物（30 MB 二进制，不进仓库）
+tools/uv.exe
+
+# 编辑器
+.vscode/
+.idea/
+.DS_Store

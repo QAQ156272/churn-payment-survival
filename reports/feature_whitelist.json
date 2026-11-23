@@ -1,0 +1,24 @@
+{
+  "features": [
+    "n_invoices",
+    "first_order_amount",
+    "days_since_last_buy",
+    "n_products",
+    "top1_product_share"
+  ],
+  "dropped": [
+    "n_active_days",
+    "window_amount"
+  ],
+  "target": {
+    "T": "days since score_day, positive integer",
+    "E": "1 observed next purchase, 0 right-censored"
+  },
+  "key_columns": [
+    "user_id",
+    "entry_date",
+    "score_day",
+    "label_deadline",
+    "split"
+  ]
+}
